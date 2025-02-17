@@ -1,0 +1,147 @@
+#root{
+    --color-background: (Dark cyan: hsl(158, 36%, 37%), Cream: hsl(30, 38%, 92%));
+   --color: (Very dark blue: hsl(212, 21%, 14%) , Dark grayish blue: hsl(228, 12%, 48%), White: hsl(0, 0%, 100%));
+   --font-text: Font size (paragraph): 14px;
+   --font-style-paragraph:(Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)  Weights: 500, 700;
+   --width: (Mobile: 375px, Desktop: 1440px;);
+   --font-head: Family: [Fraunces](https://fonts.google.com/specimen/Fraunces) Weights: 700);
+   }
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   
+   body {
+       background-color: hsl(30, 38%, 92%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh; /* Para centralizar verticalmente */
+       font-family: 'Montserrat', sans-serif;
+   }
+   
+   
+   .Container__principal {
+       max-width: 700px;
+       background: hsl(0, 0%, 100%);
+       padding: 0;
+       margin: 40px auto;
+       border-radius: 10px;
+       display: flex;
+       align-items: center;
+       overflow: hidden;
+   }
+   
+   .Container__image {
+       width: 50%; /* Define metade do contêiner para a imagem */
+       height: 100%; /* Para garantir que a altura seja igual ao conteúdo */
+       object-fit: cover; /* Mantém a proporção da imagem e preenche o espaço */
+       border-radius: 10px 0 0 10px; /* Mantém bordas arredondadas só na esquerda */
+   }
+   
+   .Card-description {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start; /* Centraliza os elementos horizontalmente */
+       gap: 10px;
+       padding: 20px;
+       width: 100%; /* Garante que o conteúdo ocupe toda a largura */
+   }
+   
+   
+   h4 {
+       letter-spacing: 2px;
+       margin-bottom: 10px;
+       font-weight: 700;
+       font-size: 12px; /* Define um valor fixo para evitar variações */
+       font-family: 'Fraunces', sans-serif;
+       color: hsl(228, 12%, 48%);
+       text-transform: uppercase;
+   }
+   
+   h1 {
+       font-size: 40px; /* Tamanho adequado para melhor leitura */
+       font-family: 'Fraunces', sans-serif;
+       font-weight: 700;
+       letter-spacing: 1px;
+       max-width: 90%; /* Evita que o título ocupe toda a largura */
+       line-height: 1.2; /* Melhora o espaçamento entre linhas */
+   }
+   
+   .description {
+       font-size: 14px;
+       font-weight: 500;
+       color: hsl(228, 12%, 48%);
+       margin: 10px 0;
+       max-width: 80%; /* Evita que o texto estique demais */
+       line-height: 1.5; /* Melhora a legibilidade */
+   }
+   
+   .descount {
+       color: hsl(158, 36%, 37%);
+       font-size: 35px;
+       font-family: 'Fraunces', sans-serif;
+       font-weight: 700;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+   }
+   .price {
+       display: flex;
+       align-items: center;
+       gap: 12px;
+   }
+   
+   
+   del {
+       color: hsl(228, 12%, 48%);
+       font-size: 14px;
+       font-family: 'Montserrat', sans-serif;
+       font-weight: 500;
+   }
+   
+   .btn {
+       background-color: hsl(158, 36%, 37%);
+       color: white;
+       padding: 12px 20px; /* Mantém uma boa proporção */
+       font-weight: 700;
+       border-radius: 5px;
+       width: 100%; /* Faz o botão ocupar toda a largura disponível */
+       max-width: 255px; /* Evita que fique muito largo */
+       height: 45px;
+       border: none;
+       cursor: pointer;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 12px;
+   }
+   
+   
+   .btn:hover {
+       background-color: hsl(158, 50%, 30%);
+   }
+   
+   .icon-cart {
+       width: 16px;
+       height: 16px;
+   }
+   
+   footer {
+       position: fixed;  /* Fixar o rodapé no fundo */
+       bottom: 0;        /* Coloca o rodapé no fundo da página */
+       left: 0;          /* Alinha à esquerda */
+       width: 100%;      /* O rodapé ocupa toda a largura */
+       color: hsl(158, 36%, 37%);
+       text-align: center;
+       padding: 8px 0;   /* Ajuste para o rodapé ficar pequeno */
+       font-size: 12px;
+       font-weight: 500;
+       font-family: 'Montserrat', sans-serif;
+   }
+   .challenge{
+       text-decoration: none;
+       color: hsl(212, 21%, 14%);
+   
+   }
